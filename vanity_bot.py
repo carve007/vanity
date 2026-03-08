@@ -67,6 +67,11 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print(f"Watching for vanity: {VANITY!r}")
 
+    await bot.change_presence(
+        status=discord.Status.online,
+        activity=discord.Activity(type=discord.ActivityType.watching, name=".gg/matter")
+    )
+
     # Pre-populate _already_repped from current role holders so we never
     # re-announce or re-ping someone who already has the role.
     for guild in bot.guilds:
