@@ -151,7 +151,7 @@ async def reward_member(member: discord.Member):
     channel = guild.get_channel(REP_CHANNEL_ID)
     if channel:
         msg = REP_MESSAGE.format(
-            user=member.mention,
+            user=member,
             vanity=VANITY,
             name=member.display_name,
         )
