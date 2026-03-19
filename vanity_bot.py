@@ -20,7 +20,7 @@ REP_CHANNEL_ID = 1480023034399031429
 #   {user}    — mention the member  e.g. @Someone
 #   {vanity}  — the vanity string   e.g. /matter
 #   {name}    — the member's display name
-REP_MESSAGE = "thanks for repping {vanity} {user}!! 🎉"
+REP_MESSAGE = "thanks for repping {vanity} {name}!! 🎉"
 
 # ---- BOOST CONFIG ----
 
